@@ -63,7 +63,7 @@ Setting a move PP to 0 will skip that move completely.
 ## Notes
 
 It works best if your moves 1-shot each Pokémon.
-
+Probably works with any trainer that you can fight again and again? Not tested though. 
 If your Pokémon is about to learn a move, the script will play 2 beeps and pause. Handle the move manually, then press 0 (zero) to continue.
 
 
