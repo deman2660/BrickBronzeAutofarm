@@ -626,16 +626,16 @@ def main():
     kb = keyboard.Listener(on_press=on_key_press)
     kb.start()
 
-    pp1, pp2, pp3 = PP_MOVE1, PP_MOVE2, PP_MOVE3
+    pp1, pp2, pp3, pp4 = PP_MOVE1, PP_MOVE2, PP_MOVE3, PP_MOVE4
 
     print("Running. ESC stops. 0 resumes learn-move prompt. P toggles pause.")
-    print(f"PP start: move1={pp1}, move2={pp2}, move3={pp3}")
+    print(f"PP start: move1={pp1}, move2={pp2}, move3={pp3}, move4={pp4}")
 
     with mss.mss() as sct:
         while not stop_requested:
             pause_point()
 
-            if pp1 <= 0 and pp2 <= 0 and pp3 <= 0:
+            if pp1 <= 0 and pp2 <= 0 and pp3 <= 0 and pp4 <= 0:
                 print("[DONE] All PP depleted.")
                 beep_stop_alert()
                 break
