@@ -23,30 +23,52 @@ Windows script that automates repeatable Roblox trainer battles using fixed coor
 pip install -r requirements.txt
 ```
 ---
-
 ## Run
 
 Start Roblox first, then run:
-```
+
 python roblox_farm.py
-```
+
 ---
-## Usage:
-Go to the Rosecove City pier and find "Babe Samantha" 
-![Babe Samantha](images/npc.png)
-and stand completely face to face with her:
-![ ](images/headshot.png)
-Then you can run the script. Make sure you set the script up correctly though. It uses the number of PP per move to know how many times to use that move so make sure you set it correctly.
-Use this image as a guide to know how the moves are setup:
-![Move set](images/move.png)
-And in the script change these to the number of PP each move has:
-PP_MOVE1 = 20
-PP_MOVE2 = 10
-PP_MOVE3 = 0
-PP_MOVE4 = 5 
-(Setting it to 0 will completely skip that move)
-## It's recommended that your moves 1 shot every pokemon to get the full use of this script. 
-If one of your pokemon are about to learn a move the script realises that and will play 2 beep sounds to let you know that something is happening. Once you select a move or discard PRESS 0 (ZERO) and the script will start from where it left off.
+
+## Usage
+
+Go to the Rosecove City pier and find "Babe Samantha".
+
+<img src="images/npc.png" alt="Babe Samantha" width="360">
+
+Stand completely face to face with her:
+
+<img src="images/headshot.png" alt="Face to face position" width="360">
+
+Then run the script.
+
+It uses the number of PP per move to decide how many times to click each move, so set these correctly.
+
+Use this image as a guide for how moves are laid out:
+
+<img src="images/move.png" alt="Move layout" width="520">
+
+Update these values inside `roblox_farm.py`:
+
+PP_MOVE1 = 20  
+PP_MOVE2 = 10  
+PP_MOVE3 = 0  
+PP_MOVE4 = 5  
+
+Setting a move PP to 0 will skip that move completely.
+
+---
+
+## Notes
+
+It works best if your moves 1-shot each Pokémon.
+
+If your Pokémon is about to learn a move, the script will play 2 beeps and pause. Handle the move manually, then press 0 (zero) to continue.
+
+
+
+
 ## Hotkeys
 
 ESC  
