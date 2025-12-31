@@ -1,4 +1,4 @@
-# Roblox Battle Farmer (roblox_farm.py)
+# Roblox Pokemon Brick Bronze Roria Conquest Battle Farmer (roblox_farm.py)
 
 Windows script that automates repeatable Roblox trainer battles using fixed coordinates, colour checks, and timing delays.
 
@@ -31,7 +31,22 @@ Start Roblox first, then run:
 python roblox_farm.py
 ```
 ---
-
+## Usage:
+Go to the Rosecove City pier and find "Babe Samantha" 
+![Babe Samantha](images/npc.png)
+and stand completely face to face with her:
+![ ](images/headshot.png)
+Then you can run the script. Make sure you set the script up correctly though. It uses the number of PP per move to know how many times to use that move so make sure you set it correctly.
+Use this image as a guide to know how the moves are setup:
+![Move set](images/move.png)
+And in the script change these to the number of PP each move has:
+PP_MOVE1 = 20
+PP_MOVE2 = 10
+PP_MOVE3 = 0
+PP_MOVE4 = 5 
+(Setting it to 0 will completely skip that move)
+## It's recommended that your moves 1 shot every pokemon to get the full use of this script. 
+If one of your pokemon are about to learn a move the script realises that and will play 2 beep sounds to let you know that something is happening. Once you select a move or discard PRESS 0 (ZERO) and the script will start from where it left off.
 ## Hotkeys
 
 ESC  
